@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>热榜信息</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background"></div>
+    <div class="container">
+        <h1>热榜信息</h1>
+        <div id="hotTabs" class="hot-tabs">
+            <button class="tab-button active" data-type="哔哩哔哩">哔哩哔哩</button>
+            <button class="tab-button" data-type="微博">微博</button>
+            <button class="tab-button" data-type="知乎">知乎</button>
+            <button class="tab-button" data-type="百度">百度</button>
+            <button class="tab-button" data-type="抖音">抖音</button>
+            <button class="tab-button" data-type="百度贴吧">百度贴吧</button>
+            <button class="tab-button" data-type="少数派">少数派</button>
+            <button class="tab-button" data-type="IT之家">IT之家</button>
+            <button class="tab-button" data-type="澎湃新闻">澎湃新闻</button>
+            <button class="tab-button" data-type="今日头条">今日头条</button>
+            <button class="tab-button" data-type="36氪">36氪</button>
+            <button class="tab-button" data-type="稀土掘金">稀土掘金</button>
+            <button class="tab-button" data-type="腾讯新闻">腾讯新闻</button>
+            <button class="tab-button" data-type="网易新闻">网易新闻</button>
+            <button class="tab-button" data-type="英雄联盟">英雄联盟</button>
+            <button class="tab-button" data-type="原神">原神</button>
+            <button class="tab-button" data-type="微信读书">微信读书</button>
+            <button class="tab-button" data-type="快手">快手</button>
+            <button class="tab-button" data-type="历史上的今天">历史上的今天</button>
+        </div>
+        <div class="info-container">
+            <p id="updateTime" class="update-time"></p>
+            <div id="randomVideo" class="random-video"></div>
+        </div>
+        <div id="hotList" class="hot-list"></div>
+    </div>
+    <div class="music-player">
+        <input type="text" id="songSearch" placeholder="输入歌曲名">
+        <button id="searchButton">搜索</button>
+        <audio id="audioPlayer" controls></audio>
+        <p id="songInfo"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
