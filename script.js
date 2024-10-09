@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 获取随机微视视频
     function fetchRandomVideo() {
-        fetch('https://api.lolimi.cn/API/weishi/api.php')
+        //fetch('https://api.lolimi.cn/API/weishi/api.php')//api
             .then(response => response.json())
             .then(data => {
                 if (data.code === '1') {
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function fetchHotList(type) {
-        const url = `https://api.lolimi.cn/API/jhrb/?hot=${encodeURIComponent(type)}`;
+        //const url = `https://api.lolimi.cn/API/jhrb/?hot=${encodeURIComponent(type)}`;//api
 
         fetch(url)
             .then(response => response.json())
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // 获取从n=1到n=10的所有歌曲
         for (let n = 1; n <= 10; n++) {
-            const url = `https://api.lolimi.cn/API/wydg/api.php?msg=${encodeURIComponent(songName)}&n=${n}`;
+            //const url = `https://api.lolimi.cn/API/wydg/api.php?msg=${encodeURIComponent(songName)}&n=${n}`;//api
 
             fetch(url)
                 .then(response => response.json())
